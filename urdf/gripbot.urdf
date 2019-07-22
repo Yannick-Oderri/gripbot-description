@@ -5,8 +5,8 @@
   <link name="arm_visual_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.10"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <mass value="19.56717"/>
+      <inertia ixx="0.503760" ixy="0" ixz="0" iyy="0.07578849" iyz="0" izz="0.50375514"/>
     </inertial>
     <visual name="arm_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -32,8 +32,8 @@
   <link name="base_column_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.7"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <mass value="33.204"/>
+      <inertia ixx="0.17785" ixy="0" ixz="0" iyy="0.15673" iyz="0" izz="0.156739"/>
     </inertial>
     <visual name="base_column_receptor_visual">
       <origin xyz="0 -0.07833 0.30885" rpy="0 0 0"/>
@@ -66,8 +66,8 @@
   <link name="base_mount_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="3.7"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <mass value="240"/>
+      <inertia ixx="2.4213" ixy="0" ixz="0" iyy="2.4213" iyz="0" izz="4.76351"/>
     </inertial>
     <visual name="base_mount_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -87,8 +87,8 @@
   <link name="forearm_visual_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.06"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <mass value="9.055067"/>
+      <inertia ixx="0.067333" ixy="0" ixz="0" iyy="0.0673332" iyz="0" izz="0.028292"/>
     </inertial>
     <visual name="forearm_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -114,8 +114,8 @@
   <link name="girdle_visual_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="0.4"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <mass value="8.62636"/>
+      <inertia ixx="0.085577" ixy="0" ixz="0" iyy="0.085577" iyz="0" izz="0.034199"/>
     </inertial>
     <visual name="girdle_mount_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -236,13 +236,48 @@
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/gripbot</robotNamespace>
-   	  <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
     </plugin>
   </gazebo>
 
+
+
   <gazebo reference="base_mount_link">
-    <selfCollide>false</selfCollide>
+    <selfCollide>true</selfCollide>
     <static>true</static>
-    <turnGravityOff>true</turnGravityOff>
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
+
+
+  <gazebo reference="arm_visual_link">
+    <mu1 value="500.0"/>
+    <kp value="10.0"/>
+    <kd value="1.0"/>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="base_column_link">
+    <mu1 value="500.0"/>
+    <kp value="10.0"/>
+    <kd value="1.0"/>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="base_mount_link">
+    <mu1 value="500.0"/>
+    <kp value="10.0"/>
+    <kd value="1.0"/>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="forearm_visual_link">
+    <mu1 value="500.0"/>
+    <kp value="10.0"/>
+    <kd value="1.0"/>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="girdle_visual_link">
+    <mu1 value="500.0"/>
+    <kp value="10.0"/>
+    <kd value="1.0"/>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
 </robot>
