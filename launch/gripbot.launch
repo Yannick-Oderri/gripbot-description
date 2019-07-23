@@ -1,8 +1,7 @@
 <launch>
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
-  <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find gripbot_description)/griptbot.world"/>
-    
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"> 
+    <arg name="world_name" value="$(find gripbot_description)/worlds/gripbot.world"/>
   </include>
 
   <!-- By default, we do not start a database (it can be large) -->
@@ -29,47 +28,36 @@
   <node name="gripbot_" pkg="controller_manager" type="spawner" respawn="false" ns="/gripbot" 
   args="
   joint_state_controller
-base_column_controller
-girdle_visual_controller
-forearm_visual_controller
-arm_visual_controller
+  base_column_controller
+  girdle_visual_controller
+  forearm_visual_controller
+  arm_visual_controller
+  base_wrist_controller
+  finger_1_base_controller
+  finger_1_distal_controller
+  finger_1_mid_controller
+  finger_1_proximal_controller
+  finger_2_base_controller
+  finger_2_distal_controller
+  finger_2_mid_controller
+  finger_2_proximal_controller
+  finger_3_distal_controller
+  finger_3_mid_controller
+  finger_3_proximal_controller
   --shutdown-timeout 3"/>
 
-  <param name="robot_description" textfile="$(find gripbot_description)/urdf/gripbot.urdf" />
+  <param name="robot_description" textfile="$(find gripbot_description)/urdf/gripbot_2.urdf" />
 
   <!-- push robot_description to factory and spawn robot in gazebo -->
   <node name="urdf_spawner" 
     pkg="gazebo_ros" 
     type="spawn_model" 
-    args="-z 0.81 -unpause -urdf -model gripbot -param robot_description" 
+    args="-z 0.01 -unpause -urdf -model gripbot -param robot_description" 
     respawn="false" 
     output="screen" />
 
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
     <param name="publish_frequency" type="double" value="30.0" />
-  </node>
-
-
-  <!-- Given the published joint states, publish tf for the robot links -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
-
-  <!-- Run the main MoveIt! executable without trajectory execution (we do not have controllers configured by default) -->
-  <!--include file="$(find gripbot_moveit_v4)/launch/move_group.launch">
-    <arg name="allow_trajectory_execution" value="true"/>
-    <arg name="fake_execution" value="false"/>
-    <arg name="info" value="true"/>
-    <arg name="debug" value="$(arg debug)"/>
-  </include-->  
-
-  <!-- Run Rviz and load the default config to see the state of the move_group node >
-  <include file="$(find gripbot_moveit_v4)/launch/moveit_rviz.launch">
-    <arg name="config" value="true"/>
-    <arg name="debug" value="$(arg debug)"/>
-  </include-->
-
-  <!--include file="$(find gripbot_moveit_v4)/launch/planning_context.launch">
-    <arg name="load_robot_description" value="false"/>
-  </include-->
-
+  </node> 
 
 </launch>

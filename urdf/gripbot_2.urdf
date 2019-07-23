@@ -153,7 +153,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="3.6"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="base_link_socket_visual">
       <origin xyz="-0.00011 -0.00716 4e-05" rpy="0 0 0"/>
@@ -185,7 +185,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.1010"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_1_base_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -205,7 +205,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_1_distal_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -225,7 +225,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_1_mid_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -245,7 +245,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_1_proximal_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -265,7 +265,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_2_base_visual">
       <origin xyz="0 0 0" rpy="-1.5708 0 1.5708"/>
@@ -285,7 +285,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_2_distal_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -305,7 +305,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_2_mid_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -325,7 +325,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_2_proximal_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -345,7 +345,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_3_distal_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -365,7 +365,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_3_mid_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -385,7 +385,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <mass value="0.101"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual name="finger_3_proximal_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -406,6 +406,7 @@
       </geometry>
     </collision>
   </link>
+
 
   <joint name = "dummy_joint" type="fixed">
     <parent link = "dummy_link"/>
@@ -433,7 +434,7 @@
     <parent link="forearm_visual_link"/>
     <child link="base_wrist_link"/>
     <axis xyz="0 -1.0 0"/>
-    <limit lower="-3.14159" upper="3.14159" effort="10000.0" velocity="6.00"/>
+    <limit lower="-1.5708" upper="1.5708" effort="10000.0" velocity="6.00"/>
   </joint>
 
   <joint name="finger_1_base_link" type="revolute">
@@ -468,12 +469,12 @@
     <limit lower="0" upper="1.5708" effort="10000.0" velocity="60000"/>
   </joint>
 
-  <joint name="finger_2_base_link" type="revolute">
+   <joint name="finger_2_base_link" type="revolute">
     <origin xyz="0.03075 -0.07079 -0.03799" rpy="0 0 0"/>
     <parent link="base_wrist_link"/>
     <child link="finger_2_base_link"/>
     <axis xyz="0 -1.0 0"/>
-    <limit lower="-0.7854" upper="1.72788" effort="10000.0" velocity="60000"/>
+    <limit lower="-0.7854" upper="2.04204" effort="10000.0" velocity="60000"/>
   </joint>
 
   <joint name="finger_2_distal_link" type="revolute">
@@ -497,7 +498,7 @@
     <parent link="finger_2_base_link"/>
     <child link="finger_2_proximal_link"/>
     <axis xyz="1.0 0 0"/>
-    <limit lower="0" upper="1.5708" effort="10000.0" velocity="60000"/>
+    <limit lower="-1.5708" upper="0" effort="10000.0" velocity="60000"/>
   </joint>
 
   <joint name="finger_3_distal_link" type="revolute">
@@ -748,13 +749,13 @@
     <kd value="10.0"/>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
-  <gazebo reference="base_wrist_link">
+  <!--gazebo reference="base_wrist_link">
     <mu1 value="500.0"/>
     <kp value="1000.00"/>
     <kd value="10.0"/>
     <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-  <gazebo reference="finger_1_base_link">
+  </gazebo-->
+  <!-- gazebo reference="finger_1_base_link">
     <mu1 value="500.0"/>
     <kp value="1000.00"/>
     <kd value="10.0"/>
@@ -785,63 +786,8 @@
     <static>true</static>
     <turnGravityOff>true</turnGravityOff>
     <selfCollide>false</selfCollide>
-  </gazebo>
-  <gazebo reference="finger_2_base_link">
-    <mu1 value="500.0"/>
-    <kp value="1000.00"/>
-    <kd value="10.0"/>
-    <static>true</static>
-    <turnGravityOff>true</turnGravityOff>
-    <selfCollide>false</selfCollide>
-  </gazebo>
-  <gazebo reference="finger_2_distal_link">
-    <mu1 value="500.0"/>
-    <kp value="1000.00"/>
-    <kd value="10.0"/>
-    <static>true</static>
-    <turnGravityOff>true</turnGravityOff>
-    <selfCollide>false</selfCollide>
-  </gazebo>
-  <gazebo reference="finger_2_mid_link">
-    <mu1 value="500.0"/>
-    <kp value="1000.00"/>
-    <kd value="10.0"/>
-    <static>true</static>
-    <turnGravityOff>true</turnGravityOff>
-    <selfCollide>false</selfCollide>
-  </gazebo>
-  <gazebo reference="finger_2_proximal_link">
-    <mu1 value="500.0"/>
-    <kp value="1000.00"/>
-    <kd value="10.0"/>
-    <static>true</static>
-    <turnGravityOff>true</turnGravityOff>
-    <selfCollide>false</selfCollide>
-  </gazebo>
-  <gazebo reference="finger_3_distal_link">
-    <mu1 value="500.0"/>
-    <kp value="1000.00"/>
-    <kd value="10.0"/>
-    <static>true</static>
-    <turnGravityOff>true</turnGravityOff>
-    <selfCollide>false</selfCollide>
-  </gazebo>
-  <gazebo reference="finger_3_mid_link">
-    <mu1 value="500.0"/>
-    <kp value="1000.00"/>
-    <kd value="10.0"/>
-    <static>true</static>
-    <turnGravityOff>true</turnGravityOff>
-    <selfCollide>false</selfCollide>
-  </gazebo>
-  <gazebo reference="finger_3_proximal_link">
-    <mu1 value="500.0"/>
-    <kp value="1000.00"/>
-    <kd value="10.0"/>
-    <static>true</static>
-    <turnGravityOff>true</turnGravityOff>
-    <selfCollide>false</selfCollide>
-  </gazebo>
+  </gazebo-->
+
   <gazebo reference="forearm_visual_link">
     <mu1 value="500.0"/>
     <kp value="1000.00"/>
