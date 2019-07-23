@@ -8,7 +8,7 @@ gripbot:
   base_column_controller:
     type: effort_controllers/JointPositionController
     joint: base_column_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 10.0, i: 0.01, d: 10.0}
   girdle_visual_controller:
     type: effort_controllers/JointPositionController
     joint: girdle_visual_link
@@ -16,7 +16,7 @@ gripbot:
   forearm_visual_controller:
     type: effort_controllers/JointPositionController
     joint: forearm_visual_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000.0, i: 1.01, d: 10.0}
   arm_visual_controller:
     type: effort_controllers/JointPositionController
     joint: arm_visual_link
@@ -24,48 +24,48 @@ gripbot:
   base_wrist_controller:
     type: effort_controllers/JointPositionController
     joint: base_wrist_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_1_base_controller:
     type: effort_controllers/JointPositionController
     joint: finger_1_base_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_1_distal_controller:
     type: effort_controllers/JointPositionController
     joint: finger_1_distal_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_1_mid_controller:
     type: effort_controllers/JointPositionController
     joint: finger_1_mid_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_1_proximal_controller:
     type: effort_controllers/JointPositionController
     joint: finger_1_proximal_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_2_base_controller:
     type: effort_controllers/JointPositionController
     joint: finger_2_base_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_2_distal_controller:
     type: effort_controllers/JointPositionController
     joint: finger_2_distal_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_2_mid_controller:
     type: effort_controllers/JointPositionController
     joint: finger_2_mid_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_2_proximal_controller:
     type: effort_controllers/JointPositionController
     joint: finger_2_proximal_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_3_distal_controller:
     type: effort_controllers/JointPositionController
     joint: finger_3_distal_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_3_mid_controller:
     type: effort_controllers/JointPositionController
     joint: finger_3_mid_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
   finger_3_proximal_controller:
     type: effort_controllers/JointPositionController
     joint: finger_3_proximal_link
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000000.0, i: 1.01, d: 10.0}
