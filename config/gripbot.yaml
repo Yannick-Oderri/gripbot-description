@@ -69,3 +69,6 @@ gripbot:
     type: effort_controllers/JointPositionController
     joint: finger_3_proximal_link
     pid: {p: 1.0, i: 1.01, d: 10.0}
+
+  arm_config:
+    joint_names: ['forearm_visual_link', 'arm_visual_link', 'girdle_visual_link', 'base_column_link']

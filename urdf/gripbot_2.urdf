@@ -723,25 +723,25 @@
 
   <gazebo reference="base_mount_link">
     <static>true</static>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="dummy_link">
     <mu1 value="500.0"/>
     <kp value="1000.00"/>
     <kd value="10.0"/>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="arm_visual_link">
     <mu1 value="500.0"/>
     <kp value="1000.00"/>
     <kd value="10.0"/>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="base_column_link">
     <mu1 value="500.0"/>
     <kp value="1000.00"/>
     <kd value="10.0"/>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="base_mount_link">
     <mu1 value="500.0"/>
@@ -749,13 +749,13 @@
     <kd value="10.0"/>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
-  <!--gazebo reference="base_wrist_link">
+  <gazebo reference="base_wrist_link">
     <mu1 value="500.0"/>
     <kp value="1000.00"/>
     <kd value="10.0"/>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo-->
-  <!-- gazebo reference="finger_1_base_link">
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="finger_1_base_link">
     <mu1 value="500.0"/>
     <kp value="1000.00"/>
     <kd value="10.0"/>
@@ -786,7 +786,74 @@
     <static>true</static>
     <turnGravityOff>true</turnGravityOff>
     <selfCollide>false</selfCollide>
-  </gazebo-->
+  </gazebo>
+
+   <gazebo reference="finger_2_base_link">
+    <mu1 value="500.0"/>
+    <kp value="1000.00"/>
+    <kd value="10.0"/>
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="finger_2_distal_link">
+    <mu1 value="500.0"/>
+    <kp value="1000.00"/>
+    <kd value="10.0"/>
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="finger_2_mid_link">
+    <mu1 value="500.0"/>
+    <kp value="1000.00"/>
+    <kd value="10.0"/>
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="finger_2_proximal_link">
+    <mu1 value="500.0"/>
+    <kp value="1000.00"/>
+    <kd value="10.0"/>
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+
+ <gazebo reference="finger_3_base_link">
+    <mu1 value="500.0"/>
+    <kp value="1000.00"/>
+    <kd value="10.0"/>
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="finger_3_distal_link">
+    <mu1 value="500.0"/>
+    <kp value="1000.00"/>
+    <kd value="10.0"/>
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="finger_3_mid_link">
+    <mu1 value="500.0"/>
+    <kp value="1000.00"/>
+    <kd value="10.0"/>
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="finger_3_proximal_link">
+    <mu1 value="500.0"/>
+    <kp value="1000.00"/>
+    <kd value="10.0"/>
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+
 
   <gazebo reference="forearm_visual_link">
     <mu1 value="500.0"/>
